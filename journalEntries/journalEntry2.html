@@ -7,8 +7,42 @@
 </head>
 
 <body>
-	<p> Today the goal is to get my github repo hosted on GitHub. There isn't much to see on the site, but getting it up and running is a good start!</p>
+	<p> Today the goal is to get my github repo hosted on GitHub. There isn't much to see on the site, actually there is nothing to see, but getting it up and running is a good start!</p>
 
-	
+	<p>To start, I will be setting the site up on the github url that is aligned with the repo. This is https://<i>username</i>.github.io/<i>repositoryname</i>/</p>
+
+	<p>Essentially what we need to do is create a new 'special' branch that will allow for us to post on this url. Today, I only have one branch which is 'master'. The new branch is called 'gh-pages'. The idea is I will make a copy of everything that is currently in my 'master' branch, next I will create the branch on my computer first, then push it to github. Below are the git commands I used to do this. </p>
+
+	<!--List of Git Commands I used-->
+	<section>
+		<p> These are the git commands I used, and the order in which I entered them:</p>
+		<ul>
+			<li>cd 100_days_of_Code</li>
+			<li>git checkout -b gh-pages  &nbsp; <i>[Switched to a new branch 'gh-pages']</i></li>
+			<li>git branch &nbsp; <i> should see both *gh-pages and master (with gh-pages in green)</i></li>
+			<li>git push origin gh-pages </li>
+		</ul>
+		<p> Welp that wasn't too bad! Here is what it looked like in my terminal: </p>
+		<img src="../images/journalEntry2_ghpagesSetUp.png" alt="gh-pages set up git commands">
+	</section>
+
+	<p>Now I should be able to go to my url for this project: https://<i>username</i>.github.io/<i>repositoryname</i>/ and see my work (give github a few minutes to do the updates if it doesn't work immediately). </p>
+
+	<p> I was expecting to see nothing, but in the end, I saw my readme.md file, as I have forgotten to save an index.html file in my project folder. I went in, saved a dummy index.html file, and pushed it up to gh-pages. Now I really have nothing on my site: </p>
+
+	<h3> First my readme.md file before I had my index file saved:</h3>
+	<img src="../images/journalEntry2_ReadmeFileURL.png" alt="Screenshot of Readme showing up due to lack of index.html file">
+
+	<h3> Now my index.html file appearing on the url:</h3>
+	<img src="../images/journalEntry2_IndexFileURL.png" alt="Screenshot of Index showing on URL">
+
+	<h3>My index.html file for now... (with pretty much nothing in it)</h3>
+	<img src="../images/journalEntry2_IndexHtmlFile.png" alt="Screenshot of my Index file with nothing in it">
+
+	<p> Since I'm done for now (need to get to work), I will do a final save, and final push to the github repository so everything is up to date before closing down. Maybe I'll be back tonight, got to get in the habit to prepare for the #100dayofCode Challenge! </p>
+
+	<p> git add -A > git commit -m 'save of all updates to journalEntry2' > git push origin gh-pages <br/> Peace out! </p>
+
+	<
 </body>
 </html>
