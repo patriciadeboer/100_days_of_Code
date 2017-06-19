@@ -30,7 +30,10 @@ nav {
   nav ul li a:hover {
     background-color: #40E0D0;
     color: #FFFACD; }
-
+  nav ul li.active a {
+    background-color: #e5f3f3;
+    color: #52D08F;
+     }
 
 @media screen and (min-width: 680px) {
   nav {
