@@ -35,7 +35,7 @@ nav {
     color: #52D08F;
      }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 700px) {
   nav {
     position: fixed;
     width: 99%;
