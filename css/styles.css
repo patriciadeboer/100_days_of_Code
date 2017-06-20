@@ -1,39 +1,66 @@
 /* ==========================================================================
  * Author's custom styles
  * ========================================================================== */
-/**************** KEY BODY ELEMENTS ****************/
 
 
 
+/***************************************** 
+GENERAL
+*****************************************/
 
+header h1 {
+  background-color: #FFAA00;
+  height: 70px;
+  margin: 0px;
+  margin-bottom: 10px;
+  color: #BE0000; 
+  font-family: 'quicksandbold', sans-serif;
+  text-align:center;}
 
+body {
+  margin: 5px 5px; }
 
-/*    NAVIGATION BAR   */
+a {
+  text-decoration: none;
+}
+
+/***************************************** 
+NAVIGATION
+*****************************************/
+
 nav {
   background-color: #008B8B;
 }
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height:50px;
-    text-align: center;
-     }
-  nav li {
-	font: 1.05em "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height:50px;
-  background-color: #008B8B;}
-  nav a {
-    display:block;
-    text-decoration: none;
-    color: white;}
-  nav ul li a:hover {
-    background-color: #40E0D0;
-    color: #FFFACD; }
-  nav ul li.active a {
-    background-color: #e5f3f3;
-    color: #52D08F;
-     }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height:50px;
+  text-align: center;
+}
+nav li {
+font: 1.05em "Helvetica Neue", Helvetica, Arial, sans-serif;
+line-height:50px;
+/*background-color: #008B8B;*/
+}
+nav a {
+  display:block;
+  color: white;
+}
+nav ul li a:hover {
+  background-color: #40E0D0;
+  color: #FFFACD; 
+}
+nav ul li.active a {
+  background-color: #e5f3f3;
+  color: #52D08F;
+}
+
+
+
+/***************************************** 
+For Browser Screen
+*****************************************/
 
 @media screen and (min-width: 700px) {
   nav {
@@ -50,9 +77,3 @@ nav {
       margin-right: -4px; 
     }
 }
-
-
-
-
-
-
