@@ -8,20 +8,35 @@
 GENERAL
 *****************************************/
 
-header h1 {
-  background-color: #FFAA00;
-  height: 70px;
-  margin: 0px;
-  margin-bottom: 10px;
-  color: #BE0000; 
-  font-family: 'quicksandbold', sans-serif;
-  text-align:center;}
-
 body {
-  margin: 5px 5px; }
+  margin: 0px;}
 
 a {
   text-decoration: none;
+}
+
+h1{
+  color: #BE0000; 
+  font-family: 'quicksandbold', sans-serif;
+  margin:0;
+  font-size: 1.75em;
+}
+
+h2{
+  color: #BE0202; 
+  margin:5px;
+  font-size: 1em;
+}
+/***************************************** 
+HEADER
+*****************************************/
+header {
+  background-color: #FFAA00;
+  float:left;
+  margin: 0 0 20px 0;
+  padding:5px 0 0 0;
+  width:100%;
+  text-align:center;
 }
 
 /***************************************** 
@@ -30,22 +45,26 @@ NAVIGATION
 
 nav {
   background-color: #008B8B;
+  width:100%;
+  text-align: center;
+
 }
 nav ul {
-  list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 10px;
   height:50px;
-  text-align: center;
+  list-style: none;
 }
-nav li {
-font: 1.05em "Helvetica Neue", Helvetica, Arial, sans-serif;
-line-height:50px;
-/*background-color: #008B8B;*/
+nav li{
+  display:inline-block;
+  font: 1.05em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 50px;
 }
-nav a {
+nav li a{
+  color:white;
   display:block;
-  color: white;
+  width:auto;
+  padding:0 20px;
 }
 nav ul li a:hover {
   background-color: #40E0D0;
@@ -56,11 +75,22 @@ nav ul li.active a {
   color: #52D08F;
 }
 
-
+/***************************************** 
+FOOTER
+*****************************************/
+footer{
+  text-align: center;
+  background-color: #ccc;
+  clear:both;
+  padding:5px;
+}
+/***************************************** 
+COLORS
+*****************************************/
 
 /***************************************** 
 For Browser Screen
-*****************************************/
+
 
 @media screen and (min-width: 700px) {
   nav {
@@ -77,3 +107,4 @@ For Browser Screen
       margin-right: -4px; 
     }
 }
+*****************************************/
