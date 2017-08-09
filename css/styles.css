@@ -20,12 +20,20 @@ h1{
   font-family: 'quicksandbold', sans-serif;
   margin:0;
   font-size: 1.75em;
+  text-align:center;
 }
 
 h2{
   color: #BE0202; 
   margin:5px;
   font-size: 1em;
+}
+
+#logo {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+
 }
 /***************************************** 
 HEADER
@@ -87,6 +95,10 @@ footer{
 /***************************************** 
 COLORS
 *****************************************/
+
+body{
+  background-color: #F6F0E8;
+}
 
 /***************************************** 
 For Browser Screen
