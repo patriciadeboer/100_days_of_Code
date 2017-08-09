@@ -6,26 +6,6 @@
 
 /***************************************** 
 GENERAL
-*****************************************/
-
-body {
-  margin: 0px;}
-
-a {
-  text-decoration: none;
-}
-
-h1{
-  font-family: 'quicksandbold', sans-serif;
-  margin:0;
-  font-size: 1.75em;
-  text-align:center;
-}
-
-h2{
-  margin:5px;
-  font-size: 1em;
-}
 
 #logo {
   max-width: 50%;
@@ -33,11 +13,41 @@ h2{
   margin: 0 auto;
 
 }
-/***************************************** 
-HEADER (old color #FFAA00)
 *****************************************/
+body {
+  margin: 0px;
+  font-family: 'open_sansregular', sans-serif }
+
+a {
+  text-decoration: none;
+}
+
+/*em is a relative unit 1,75 is .75 larger than default*/
+h1{
+  font-family: 'quicksandbold', sans-serif;
+  margin:0;
+  font-size: 1.75em;
+  text-align:center;
+  font-weight: normal;
+  line-height:1em;
+}
+
+h2{
+  font-size: 1.4em;
+  margin:5px 0 0;
+  font-weight: normal;
+}
+
+/*tells image to fill the width of parent container*/
+img{
+  max-width:100%;
+}
+
+/***************************************** 
+HEADER
+*****************************************/
+
 header {
-  background-color: #ED752F;
   float:left;
   margin: 0 0 20px 0;
   padding:5px 0 0 0;
@@ -45,31 +55,23 @@ header {
   text-align:center;
 }
 
+#top-header{
+  text-align:center;
+  margin:0;
+}
+
 header h1{
-  color:white;
   font-size: 4em;
 }
 
-header h2{
-  color:#e5f3f3;
-}
 
 /***************************************** 
 NAVIGATION
-*****************************************/
 
-nav {
-  background-color: #008B8B;
-  width:100%;
-  text-align: center;
-
-}
 nav ul {
-  padding: 0;
-  margin: 0 10px;
   height:50px;
-  list-style: none;
 }
+
 nav li{
   display:inline-block;
   font: 1.05em "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -81,19 +83,79 @@ nav li a{
   width:auto;
   padding:0 20px;
 }
-nav ul li a:hover {
-  background-color: #40E0D0;
-  color: #FFFACD; 
+
+
+*****************************************/
+
+nav {
+  background-color: #008B8B;
+  width:100%;
+  text-align: center;
+  padding:10px 0;
+  margin:20px 0 0;
 }
-nav ul li.active a {
+
+nav ul {
+  padding: 0;
+  margin: 0 10px;
+  list-style: none;
+  display:inline-block;
+}
+
+nav a, nav a:visited {
+  color:white;
+}
+
+/* Active Link */
+nav ul li.active, nav ul li.active a {
   background-color: #e5f3f3;
   color: #52D08F;
 }
 
+/* Hovered Link*/
+nav ul li a:hover {
+  background-color: #40E0D0;
+  color: #FFFACD; 
+}
+
+/***************************************** 
+CORE CONTENT - WRAPPER
+*****************************************/
+
+#wrapper {
+  max-width: 940px;
+  margin:0 auto;
+  padding:0 5%;
+}
+
+/***************************************** 
+PAGE: HOME specific styling
+*****************************************/
+#recents{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+#recents li{
+  float: left;
+  width:45%;
+  margin:2.5%;
+  background-color: white;
+  color:blue;
+}
+
+#recents li a p {
+  margin:0;
+  padding:5%;
+  font-size:0.8em;
+  color: #008B8B;
+  text-align: center;
+}
 /***************************************** 
 FOOTER
 position fixed - sets it at the bottom along with the dimensions
-*****************************************/
+
 footer{
   text-align: center;
   position:fixed;
@@ -104,13 +166,22 @@ footer{
   clear:both;
   padding:5px;
 }
-
+*****************************************/
+footer{
+  font-size: .75em;
+  text-align: center;
+  clear:both;
+  padding-top:40px;
+}
 /***************************************** 
 COLORS
 *****************************************/
-
 body{
-  background-color: #F6F0E8;
+  background: #F6F0E8;
+}
+
+a{
+  color:#FB3640;
 }
 
 h1{
@@ -121,11 +192,22 @@ h2{
   color: #ED752F;
 }
 
+header {
+  background-color: #ED752F;
+  border-color:orange;
+}
+
+header h1{
+  color:white;
+}
+
+header h2{
+  color:#e5f3f3;
+}
+
 footer{
   background-color: #CCC;
 }
-
-
 /***************************************** 
 For Browser Screen
 
