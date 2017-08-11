@@ -6,16 +6,10 @@
 
 /***************************************** 
 GENERAL
-
-#logo {
-  max-width: 50%;
-  display: block;
-  margin: 0 auto;
-
-}
 *****************************************/
 body {
   margin: 0px;
+  padding:0px;
   font-family: 'open_sansregular', sans-serif }
 
 a {
@@ -38,10 +32,16 @@ h2{
   font-weight: normal;
 }
 
+h3{
+  margin:0 0 1em 0;
+  
+}
 /*tells image to fill the width of parent container*/
 img{
   max-width:100%;
 }
+
+
 
 /***************************************** 
 HEADER
@@ -71,54 +71,6 @@ header h2{
 
 /***************************************** 
 NAVIGATION
-
-nav {
-  background-color: #008B8B;
-  width:100%;
-  text-align: center;
-  padding:10px 0;
-  margin:20px 0 0;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0 10px;
-  list-style: none;
-  display:inline-block;
-}
-
-nav a, nav a:visited {
-  color:white;
-}
-
-/* Active Link 
-nav ul li.active, nav ul li.active a {
-  background-color: #e5f3f3;
-  color: #52D08F;
-}
-
-/* Hovered Link
-nav ul li a:hover {
-  background-color: #40E0D0;
-  color: #FFFACD; 
-}
-nav ul {
-  height:50px;
-}
-
-nav li{
-  display:inline-block;
-  font: 1.05em "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 50px;
-}
-nav li a{
-  color:white;
-  display:block;
-  width:auto;
-  padding:0 20px;
-}
-
-
 *****************************************/
 
 nav{
@@ -153,6 +105,12 @@ nav ul li.active a{
     font-weight:bold;
 }
 
+/* Hovered Link*/
+nav ul li a:hover {
+  background-color: #40E0D0;
+  color: #FFFACD; 
+}
+
 /***************************************** 
 CORE CONTENT - WRAPPER
 *****************************************/
@@ -162,6 +120,8 @@ CORE CONTENT - WRAPPER
   margin:0 auto;
   padding:0 5%;
 }
+
+
 
 /***************************************** 
 PAGE: HOME specific styling
@@ -187,27 +147,33 @@ PAGE: HOME specific styling
   color: #008B8B;
   text-align: center;
 }
+
+/***************************************** 
+PAGE: ABOUT
+*****************************************/
+.profile-photo{
+  display:block;
+  max-width:250px;
+  margin:0 auto 30px;
+  border-radius: 100%;
+}
+
 /***************************************** 
 FOOTER
-position fixed - sets it at the bottom along with the dimensions
-
-footer{
-  text-align: center;
-  position:fixed;
-  height: 25px;
-  width: 99%;
-  bottom: 0px;
-  right: 0px;
-  clear:both;
-  padding:5px;
-}
 *****************************************/
 footer{
   font-size: .75em;
   text-align: center;
   clear:both;
-  padding-top:40px;
+  padding-top:20px;
 }
+
+footer img{
+  max-width:60px;
+  width:7%
+}
+
+
 /***************************************** 
 COLORS
 *****************************************/
@@ -240,9 +206,7 @@ header h2{
   color:#FDE74C;
 }
 
-footer{
-  background-color: #CCC;
-}
+
 
 /***************************************** 
 Media Queries
@@ -262,7 +226,6 @@ Media Queries
   }
   nav ul {
     list-style: none;
-    margin: 0 10px;
     padding:0;
   }
   nav li{
