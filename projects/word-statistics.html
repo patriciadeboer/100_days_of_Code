@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <!--METADATA-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Word Stats</title>
+        <meta name="description" content="A website showcasing my work as I go through the 100 Days Of Code Challenge!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Links to CSS sheets-->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/html5boilerplate.css">
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <!--FONTS-->
+        <link rel="stylesheet" href="../fonts/webfontkit-opensans/stylesheet.css" type="text/css">
+        <link href="../fonts/webfontkit-quicksand/stylesheet.css" rel="stylesheet" type="text/css">
+
+        <!--OTHER-->
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="container">
+            <a href="index.html" id="top-header">
+                <h1>My Journey 2 Code</h1>
+                <h2>100 Days of Code Challenge</h2>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li  class="active"><a href="all-entries.html">Entries</a></li>
+                    <li><a href="../projects/library.html">Projects</a></li>
+                    <li><a href="../resources/resources.html">Resources</a></li>
+                    <li><a href="../about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="calculator">
+            <h2>Word Statistics</h2>
+            <div class="calculator_form">
+                <input id="wordz2" type="text" placeholder="A word or phrase."/>
+                <input type="submit" onclick="countingWords()" />
+            </div>
+            <p class="stat"> Input String: <span id="string"> </span> </p>
+            <p class="stat"> Character count: <span id="char_count"> </span></p>
+            <p class="stat"> Character count w/o space: <span id="chars_no_space"> </span></p>
+            <p class="stat"> Word Count: <span id="word_count"> </span></p>
+            <p class="stat"> Number of vowels: <span id="count_vowels"> </span></p>
+            <p class="stat"> Tweetable? <span id="tweetable"> </span></p>
+        </div>
+
+        <script src="../js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="../js/word-statistics.js"></script>
+
+    </body>
+</html>
